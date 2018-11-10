@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KeyboardTech
 {
-    public partial class Form1 : Form
+    public partial class MetinTest : Form
     {
-        public Form1()
+        public MetinTest()
         {
             InitializeComponent();
         }

@@ -46,14 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Degisken.cs" />
+    <Compile Include="Theme\Theme.cs" />
+    <Compile Include="Theme\ThemeBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MetinGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MetinGiris.Designer.cs">
+      <DependentUpon>MetinGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetinTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetinTest.Designer.cs">
+      <DependentUpon>MetinTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MetinGiris.resx">
+      <DependentUpon>MetinGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetinTest.resx">
+      <DependentUpon>MetinTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
